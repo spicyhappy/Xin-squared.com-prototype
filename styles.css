@@ -434,28 +434,29 @@ footer button, footer .button, footer button:visited, footer button:active, foot
 /* line 70, _layout.scss */
 .resume:first-of-type {
   padding-bottom: 0;
+  padding-top: 0;
 }
-/* line 74, _layout.scss */
+/* line 75, _layout.scss */
 .resume .position {
   padding-bottom: 1.42857rem;
 }
-/* line 78, _layout.scss */
+/* line 79, _layout.scss */
 .resume h3 {
   font-size: 1.28571rem;
   line-height: 2.14286rem;
   text-align: left;
   margin: 0;
 }
-/* line 85, _layout.scss */
+/* line 86, _layout.scss */
 .resume h3 a {
   font-weight: bold;
   font-style: normal;
 }
-/* line 90, _layout.scss */
+/* line 91, _layout.scss */
 .resume p {
   margin: 0;
 }
-/* line 94, _layout.scss */
+/* line 95, _layout.scss */
 .resume p:first-of-type {
   color: #656565;
 }
