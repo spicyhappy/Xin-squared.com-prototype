@@ -1,0 +1,111 @@
+@import 'variables';
+
+html {
+	font-size: 100%;
+	font-family: $sanserif-fonts;
+	font-size: (14/16) + rem;
+	color: $black;
+	background-color: $gray-white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+::selection {
+	background: $green;
+}
+
+h1, h2, h3 {
+	font-family: $serif-fonts;
+	font-style: italic;
+	font-weight: 400;
+	text-align: center;
+}
+
+h1 {
+	font-size: (36/14) + rem;
+	line-height: (50/14) + rem;
+}
+
+h2, h3 {
+	font-size: (22/14) + rem;
+	line-height: (30/14) + rem;
+}
+
+a, a:visited, a:active {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px solid;
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+	transition-property: opacity;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-backface-visibility: hidden;
+}
+
+a:hover, a:visited:hover {
+	opacity: .5;
+}
+
+// Specific typography
+
+header, footer, nav {
+	text-align: center;
+}
+
+.caption, header h2, section h1, nav a{
+	font-family: $serif-fonts;
+	font-weight: 700;
+	font-size: (12/14) + rem;
+	font-style: normal;
+	line-height: (20/14) + rem;
+	letter-spacing: (.8/14) + rem;
+	text-transform: uppercase;
+}
+
+section fieldset {
+	border: 0;
+	border-top: 1px solid;
+	text-align: center;
+
+	legend {
+		padding: 0 (10/14) + rem;
+	}
+}
+
+button, .button, a:visited.button, a:active.button {
+	display: inline-block;
+	outline: 0;
+	margin-bottom: (10/14) + rem;
+	margin-right: (10/14) + rem;
+	font-weight: 700;
+	color: $red;
+	font-size: (12/14) + rem;
+	letter-spacing: (2.5/14) + rem;
+	text-transform: uppercase;
+	line-height: (38/14) + rem;
+	height: (40/14) + rem;
+	background-color: none;
+	padding: 0 (15/14) + rem;
+	border: 1px solid $red;
+	cursor: pointer;
+	-webkit-border-radius: (50/14) + rem;
+	-moz-border-radius: (50/14) + rem;
+	border-radius: (50/14) + rem;
+}
+
+button:last-of-type, .button:last-of-type, a:visited.button:last-of-type, a:active.button:last-of-type {
+	margin-right: 0;
+}
+
+nav {
+	ul, li {
+		display: inline-block;
+		padding: 0;
+	}
+
+
+}

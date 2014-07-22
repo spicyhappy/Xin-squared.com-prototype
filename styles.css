@@ -1,0 +1,388 @@
+/* normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, _reset.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, _reset.scss */
+html {
+  font-family: serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 25, _reset.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 49, _reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 61, _reset.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 73, _reset.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 82, _reset.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 95, _reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 106, _reset.scss */
+img {
+  border: 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 117, _reset.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 130, _reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 153, _reset.scss */
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 163, _reset.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 175, _reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 190, _reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 200, _reset.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 208, _reset.scss */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 220, _reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 226, _reset.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 3, _typography.scss */
+html {
+  font-size: 100%;
+  font-family: "adelle-sans", helvetica, arial, sans-serif;
+  font-size: 0.875rem;
+  color: #111111;
+  background-color: #fdfdfd;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 13, _typography.scss */
+::selection {
+  background: #00ffac;
+}
+
+/* line 17, _typography.scss */
+h1, h2, h3 {
+  font-family: "adelle", georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 24, _typography.scss */
+h1 {
+  font-size: 2.57143rem;
+  line-height: 3.57143rem;
+}
+
+/* line 29, _typography.scss */
+h2, h3 {
+  font-size: 1.57143rem;
+  line-height: 2.14286rem;
+}
+
+/* line 34, _typography.scss */
+a, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 49, _typography.scss */
+a:hover, a:visited:hover {
+  opacity: .5;
+}
+
+/* line 55, _typography.scss */
+header, footer, nav {
+  text-align: center;
+}
+
+/* line 59, _typography.scss */
+.caption, header h2, section h1, nav a {
+  font-family: "adelle", georgia, serif;
+  font-weight: 700;
+  font-size: 0.85714rem;
+  font-style: normal;
+  line-height: 1.42857rem;
+  letter-spacing: 0.05714rem;
+  text-transform: uppercase;
+}
+
+/* line 69, _typography.scss */
+section fieldset {
+  border: 0;
+  border-top: 1px solid;
+  text-align: center;
+}
+/* line 74, _typography.scss */
+section fieldset legend {
+  padding: 0 0.71429rem;
+}
+
+/* line 79, _typography.scss */
+button, .button, a:visited.button, a:active.button {
+  display: inline-block;
+  outline: 0;
+  margin-bottom: 0.71429rem;
+  margin-right: 0.71429rem;
+  font-weight: 700;
+  color: #ff4a40;
+  font-size: 0.85714rem;
+  letter-spacing: 0.17857rem;
+  text-transform: uppercase;
+  line-height: 2.71429rem;
+  height: 2.85714rem;
+  background-color: none;
+  padding: 0 1.07143rem;
+  border: 1px solid #ff4a40;
+  cursor: pointer;
+  -webkit-border-radius: 3.57143rem;
+  -moz-border-radius: 3.57143rem;
+  border-radius: 3.57143rem;
+}
+
+/* line 100, _typography.scss */
+button:last-of-type, .button:last-of-type, a:visited.button:last-of-type, a:active.button:last-of-type {
+  margin-right: 0;
+}
+
+/* line 105, _typography.scss */
+nav ul, nav li {
+  display: inline-block;
+  padding: 0;
+}
+
+/* line 1, _layout.scss */
+header, section, footer {
+  padding: 2.85714rem 1.42857rem;
+}
+
+/* line 5, _layout.scss */
+table {
+  width: 100%;
+}
+
+/* line 9, _layout.scss */
+#projects {
+  background-color: #15bded;
+  color: white;
+}
+/* line 10, _layout.scss */
+#projects h2, #projects a {
+  margin-bottom: 0.71429rem;
+  margin-top: 0.71429rem;
+}
+/* line 15, _layout.scss */
+#projects td:first-of-type h2 {
+  text-align: right;
+}
+/* line 19, _layout.scss */
+#projects td:not(:last-child) {
+  padding: 0 0.71429rem 0 0;
+}
+
+/* line 27, _layout.scss */
+footer {
+  background: rgba(17, 17, 17, 0.8);
+  color: white;
+}
+/* line 31, _layout.scss */
+footer button, footer .button {
+  color: white;
+  background-color: rgba(255, 74, 64, 0.6);
+  border: 0;
+}

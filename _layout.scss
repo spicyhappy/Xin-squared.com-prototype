@@ -1,0 +1,36 @@
+header, section, footer {
+	padding: (40/14) + rem (20/14) + rem;
+}
+
+table {
+	width: 100%;
+}
+
+#projects {
+	h2, a {
+		margin-bottom: (10/14) + rem;
+		margin-top: (10/14) + rem;
+	}
+
+	td:first-of-type h2 {
+		text-align: right;
+	}
+
+	td:not(:last-child) {
+		padding: 0 (10/14) + rem 0 0;
+	}
+
+	background-color: $blue;
+	color: white;
+}
+
+footer {
+	background: rgba($black, .8);
+	color: white;
+
+	button, .button {
+		color: white;
+		background-color: rgba($red, .6);
+		border: 0;
+	}
+}
