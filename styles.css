@@ -5,13 +5,6 @@
  *    user zoom.
  */
 /* line 9, _reset.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 15, _reset.scss */
 html {
   font-family: serif;
   /* 1 */
@@ -24,7 +17,7 @@ html {
 /**
  * Remove default margin.
  */
-/* line 25, _reset.scss */
+/* line 19, _reset.scss */
 body {
   margin: 0;
 }
@@ -36,7 +29,7 @@ body {
  * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-/* line 49, _reset.scss */
+/* line 43, _reset.scss */
 article,
 aside,
 details,
@@ -56,7 +49,7 @@ summary {
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-/* line 61, _reset.scss */
+/* line 55, _reset.scss */
 audio,
 canvas,
 progress,
@@ -72,7 +65,7 @@ video {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-/* line 73, _reset.scss */
+/* line 67, _reset.scss */
 a {
   background: transparent;
 }
@@ -80,7 +73,7 @@ a {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 82, _reset.scss */
+/* line 76, _reset.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -91,7 +84,7 @@ a:hover {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-/* line 95, _reset.scss */
+/* line 89, _reset.scss */
 b,
 strong {
   font-weight: bold;
@@ -102,7 +95,7 @@ strong {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
-/* line 106, _reset.scss */
+/* line 100, _reset.scss */
 img {
   border: 0;
 }
@@ -112,7 +105,7 @@ img {
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 117, _reset.scss */
+/* line 111, _reset.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -122,7 +115,7 @@ hr {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-/* line 130, _reset.scss */
+/* line 124, _reset.scss */
 code,
 kbd,
 pre,
@@ -143,7 +136,7 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-/* line 153, _reset.scss */
+/* line 147, _reset.scss */
 button,
 input,
 select,
@@ -159,7 +152,7 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-/* line 163, _reset.scss */
+/* line 157, _reset.scss */
 button {
   overflow: visible;
 }
@@ -170,7 +163,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-/* line 175, _reset.scss */
+/* line 169, _reset.scss */
 button,
 select {
   text-transform: none;
@@ -183,7 +176,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 190, _reset.scss */
+/* line 184, _reset.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -197,7 +190,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 200, _reset.scss */
+/* line 194, _reset.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -206,7 +199,7 @@ html input[disabled] {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 208, _reset.scss */
+/* line 202, _reset.scss */
 button::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -217,13 +210,13 @@ button::-moz-focus-inner {
 /**
  * Remove most spacing between table cells.
  */
-/* line 220, _reset.scss */
+/* line 214, _reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 226, _reset.scss */
+/* line 220, _reset.scss */
 td,
 th {
   padding: 0;
@@ -355,48 +348,79 @@ button:last-of-type, .button:last-of-type, a:visited.button:last-of-type, a:acti
 }
 
 /* line 117, _typography.scss */
-nav ul, nav li {
+nav ul, nav li, .nav ul, .nav li {
   display: inline-block;
   padding: 0;
 }
 
 /* line 1, _layout.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 7, _layout.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 11, _layout.scss */
 header, section, footer {
   padding: 2.85714rem 1.42857rem;
 }
 
-/* line 5, _layout.scss */
+/* line 15, _layout.scss */
 table {
   width: 100%;
 }
 
-/* line 9, _layout.scss */
-#projects {
-  background-color: #15bded;
-  color: white;
-}
-/* line 10, _layout.scss */
-#projects h2, #projects a {
-  margin-bottom: 0.71429rem;
-  margin-top: 0.71429rem;
-}
-/* line 15, _layout.scss */
-#projects td:first-of-type h2 {
-  text-align: right;
-}
 /* line 19, _layout.scss */
-#projects td:not(:last-child) {
-  padding: 0 0.71429rem 0 0;
-}
-
-/* line 27, _layout.scss */
 footer {
   background: rgba(17, 17, 17, 0.8);
   color: white;
 }
-/* line 31, _layout.scss */
+/* line 23, _layout.scss */
 footer button, footer .button, footer button:visited, footer button:active, footer .button:active, footer .button:visited {
   color: white;
   background-color: rgba(255, 74, 64, 0.6);
   border: 0;
+}
+
+/* line 30, _layout.scss */
+.full-page {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+/* line 35, _layout.scss */
+.full-page .inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 42, _layout.scss */
+.site-nav {
+  position: absolute;
+  width: 100%;
+}
+
+/* line 47, _layout.scss */
+#projects {
+  background-color: #15bded;
+  color: white;
+}
+/* line 48, _layout.scss */
+#projects h2, #projects a {
+  margin-bottom: 0.71429rem;
+  margin-top: 0.71429rem;
+}
+/* line 53, _layout.scss */
+#projects td:first-of-type h2 {
+  text-align: right;
+}
+/* line 57, _layout.scss */
+#projects td:not(:last-child) {
+  padding: 0 0.71429rem 0 0;
 }

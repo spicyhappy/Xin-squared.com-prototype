@@ -113,11 +113,9 @@ button:last-of-type, .button:last-of-type, a:visited.button:last-of-type, a:acti
 	margin-right: 0;
 }
 
-nav {
+nav, .nav {
 	ul, li {
 		display: inline-block;
 		padding: 0;
 	}
-
-
 }
