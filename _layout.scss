@@ -8,6 +8,10 @@ html, body {
 	height: 100%;
 }
 
+body {
+	border-top: 2px solid $red;
+}
+
 header, section, footer {
 	padding: (40/14) + rem (20/14) + rem;
 }
@@ -60,4 +64,34 @@ footer {
 
 	background-color: $blue;
 	color: white;
+}
+
+.resume {
+	&:first-of-type {
+		padding-bottom: 0;
+	}
+
+	.position {
+		padding-bottom: (20/14) + rem;
+	}
+
+	h3 {
+		font-size: (18/14) + rem;
+		line-height: (30/14) + rem;
+		text-align: left;
+		margin: 0;
+	}
+
+	h3 a {
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	p:first-of-type {
+		color: $gray;
+	}
 }
