@@ -28,7 +28,7 @@ footer {
 	background: rgba($black, .8);
 	color: white;
 
-	button, .button {
+	button, .button, button:visited, button:active, .button:active, .button:visited {
 		color: white;
 		background-color: rgba($red, .6);
 		border: 0;

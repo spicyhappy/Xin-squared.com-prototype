@@ -395,7 +395,7 @@ footer {
   color: white;
 }
 /* line 31, _layout.scss */
-footer button, footer .button {
+footer button, footer .button, footer button:visited, footer button:active, footer .button:active, footer .button:visited {
   color: white;
   background-color: rgba(255, 74, 64, 0.6);
   border: 0;
