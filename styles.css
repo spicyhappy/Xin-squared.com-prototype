@@ -286,12 +286,19 @@ a:hover, a:visited:hover {
   opacity: .5;
 }
 
-/* line 55, _typography.scss */
+/* line 53, _typography.scss */
+a.current {
+  pointer-events: none;
+  cursor: default;
+  border: 0;
+}
+
+/* line 61, _typography.scss */
 header, footer, nav {
   text-align: center;
 }
 
-/* line 59, _typography.scss */
+/* line 65, _typography.scss */
 .caption, header h2, section h1, nav a {
   font-family: "adelle", georgia, serif;
   font-weight: 700;
@@ -302,18 +309,18 @@ header, footer, nav {
   text-transform: uppercase;
 }
 
-/* line 69, _typography.scss */
+/* line 75, _typography.scss */
 section fieldset {
   border: 0;
   border-top: 1px solid;
   text-align: center;
 }
-/* line 74, _typography.scss */
+/* line 80, _typography.scss */
 section fieldset legend {
   padding: 0 0.71429rem;
 }
 
-/* line 79, _typography.scss */
+/* line 85, _typography.scss */
 button, .button, a:visited.button, a:active.button {
   display: inline-block;
   outline: 0;
@@ -335,12 +342,19 @@ button, .button, a:visited.button, a:active.button {
   border-radius: 3.57143rem;
 }
 
-/* line 100, _typography.scss */
+/* line 106, _typography.scss */
+button:hover, .button:hover {
+  opacity: 1;
+  background-color: #ff4a40;
+  color: white;
+}
+
+/* line 112, _typography.scss */
 button:last-of-type, .button:last-of-type, a:visited.button:last-of-type, a:active.button:last-of-type {
   margin-right: 0;
 }
 
-/* line 105, _typography.scss */
+/* line 117, _typography.scss */
 nav ul, nav li {
   display: inline-block;
   padding: 0;

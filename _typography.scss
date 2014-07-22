@@ -50,6 +50,12 @@ a:hover, a:visited:hover {
 	opacity: .5;
 }
 
+a.current {
+	pointer-events: none;
+	cursor: default;
+	border: 0;
+}
+
 // Specific typography
 
 header, footer, nav {
@@ -95,6 +101,12 @@ button, .button, a:visited.button, a:active.button {
 	-webkit-border-radius: (50/14) + rem;
 	-moz-border-radius: (50/14) + rem;
 	border-radius: (50/14) + rem;
+}
+
+button:hover, .button:hover {
+	opacity: 1;
+	background-color: $red;
+	color: white;
 }
 
 button:last-of-type, .button:last-of-type, a:visited.button:last-of-type, a:active.button:last-of-type {
