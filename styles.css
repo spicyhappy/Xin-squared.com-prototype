@@ -337,7 +337,7 @@ button, .button, a:visited.button, a:active.button {
 }
 
 /* line 107, _typography.scss */
-button:hover, .button:hover {
+button:hover, .button:hover, button:visited:hover, .button:visited:hover {
   opacity: 1;
   background-color: #ff4a40;
   color: white;

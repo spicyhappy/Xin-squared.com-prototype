@@ -104,7 +104,7 @@ button, .button, a:visited.button, a:active.button {
 	border-radius: (50/14) + rem;
 }
 
-button:hover, .button:hover {
+button:hover, .button:hover, button:visited:hover, .button:visited:hover {
 	opacity: 1;
 	background-color: $red;
 	color: white;
