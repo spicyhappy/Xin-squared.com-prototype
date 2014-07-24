@@ -81,33 +81,33 @@ h1, h2, h3 {
   font-family: "adelle", georgia, serif;
   font-style: italic;
   font-weight: 400;
+  text-align: center;
 }
 
-/* line 24, _typography.scss */
+/* line 25, _typography.scss */
 h1 {
   font-size: 2.57143rem;
   line-height: 3.57143rem;
   margin-bottom: 1.42857rem;
 }
 
-/* line 30, _typography.scss */
+/* line 31, _typography.scss */
 h2, h3, article h1 {
   font-size: 1.57143rem;
   line-height: 2.14286rem;
   margin-bottom: 1.42857rem;
 }
 
-/* line 36, _typography.scss */
+/* line 37, _typography.scss */
 p {
   line-height: 1.78571rem;
   margin-bottom: 1.42857rem;
 }
 
-/* line 41, _typography.scss */
+/* line 42, _typography.scss */
 a, a:visited, a:active {
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid;
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
@@ -117,26 +117,42 @@ a, a:visited, a:active {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-backface-visibility: hidden;
+  position: relative;
 }
 
-/* line 56, _typography.scss */
+/* line 57, _typography.scss */
+a:after, a:visited:after, a:active:after {
+  border-bottom: 1px solid;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.14286rem;
+}
+
+/* line 66, _typography.scss */
+h1 a:after, h2 a:after, h3 a:after {
+  bottom: 0.21429rem;
+}
+
+/* line 70, _typography.scss */
 a:hover, a:visited:hover {
   opacity: .5;
 }
 
-/* line 60, _typography.scss */
+/* line 74, _typography.scss */
 a.current {
   pointer-events: none;
   cursor: default;
   border: 0;
 }
 
-/* line 68, _typography.scss */
-header, footer, nav {
-  text-align: center;
+/* line 80, _typography.scss */
+a.current:after {
+  border-bottom: none;
 }
 
-/* line 72, _typography.scss */
+/* line 84, _typography.scss */
 .caption, header h2, fieldset h1, fieldset h2, nav a {
   font-family: "adelle", georgia, serif;
   font-weight: 700;
@@ -147,19 +163,19 @@ header, footer, nav {
   text-transform: uppercase;
 }
 
-/* line 82, _typography.scss */
+/* line 94, _typography.scss */
 section fieldset {
   border: 0;
   border-top: 1px solid;
   text-align: center;
-  margin-bottom: 0.71429rem;
+  margin-bottom: 1.42857rem;
 }
-/* line 88, _typography.scss */
+/* line 100, _typography.scss */
 section fieldset legend {
   padding: 0 0.71429rem;
 }
 
-/* line 93, _typography.scss */
+/* line 105, _typography.scss */
 button, .button, a:visited.button, a:active.button {
   display: inline-block;
   outline: 0;
@@ -181,22 +197,37 @@ button, .button, a:visited.button, a:active.button {
   border-radius: 3.57143rem;
 }
 
-/* line 114, _typography.scss */
+/* line 126, _typography.scss */
+button:after, button:visited:after, .button:active:after, .button:after, .button:visited:after, .button:active:after {
+  border-bottom: none;
+}
+
+/* line 131, _typography.scss */
 button:hover, .button:hover, button:visited:hover, .button:visited:hover {
   opacity: 1;
   background-color: #ff4a40;
   color: white;
 }
 
-/* line 120, _typography.scss */
+/* line 137, _typography.scss */
 button:last-of-type, .button:last-of-type, a:visited.button:last-of-type, a:active.button:last-of-type {
   margin-right: 0;
 }
 
-/* line 125, _typography.scss */
+/* line 141, _typography.scss */
+nav, .nav {
+  text-align: center;
+}
+/* line 143, _typography.scss */
 nav ul, nav li, .nav ul, .nav li {
   display: inline-block;
   padding: 0;
+}
+
+/* line 149, _typography.scss */
+.contact-info {
+  text-align: center;
+  padding-bottom: 1.42857rem;
 }
 
 /* line 1, _layout.scss */
@@ -207,117 +238,131 @@ nav ul, nav li, .nav ul, .nav li {
 }
 
 /* line 7, _layout.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 11, _layout.scss */
 html, body {
   height: 100%;
 }
 
-/* line 11, _layout.scss */
-body {
-  border-top: 2px solid #ff4a40;
-}
-
 /* line 15, _layout.scss */
-header.full-page, section, footer {
+header, footer, section {
   padding: 4.28571rem 1.42857rem;
 }
 
-/* line 21, _layout.scss */
-header .contact-info {
-  margin-bottom: 2.85714rem;
+/* line 19, _layout.scss */
+header.full-page {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+/* line 24, _layout.scss */
+header.full-page .inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 29, _layout.scss */
+header.full-page .inner button, header.full-page .inner .button {
+  margin-top: 1.42857rem;
 }
 
-/* line 25, _layout.scss */
+/* line 35, _layout.scss */
 table {
   width: 100%;
 }
 
-/* line 29, _layout.scss */
+/* line 39, _layout.scss */
 footer {
+  text-align: center;
   background: rgba(17, 17, 17, 0.8);
   color: white;
+  height: 100%;
+  width: 100%;
 }
-/* line 33, _layout.scss */
+/* line 46, _layout.scss */
 footer button, footer .button, footer button:visited, footer button:active, footer .button:active, footer .button:visited {
   color: white;
   background-color: rgba(255, 74, 64, 0.6);
   border: 0;
 }
 
-/* line 40, _layout.scss */
-.full-page {
-  height: 100%;
-  width: 100%;
-  display: table;
-}
-/* line 45, _layout.scss */
-.full-page .inner {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-/* line 50, _layout.scss */
-.full-page .inner button, .full-page .inner .button {
-  margin-top: 1.42857rem;
+/* line 53, _layout.scss */
+section .inner, footer .inner, header .inner {
+  max-width: 40rem;
+  margin: 0 auto;
 }
 
-/* line 56, _layout.scss */
+/* line 58, _layout.scss */
+article {
+  padding-bottom: 2.14286rem;
+}
+
+/* line 64, _layout.scss */
 .site-nav {
   position: absolute;
   width: 100%;
-  margin: 1.42857rem 0;
+  padding: 1.42857rem 0;
+  border-top: 2px solid #ff4a40;
 }
 
-/* line 62, _layout.scss */
+/* line 71, _layout.scss */
 .footer-nav {
   margin: 1.42857rem 0;
 }
 
-/* line 66, _layout.scss */
+/* line 75, _layout.scss */
 #projects {
   padding: 2.85714rem 1.42857rem;
   background-color: #15bded;
   color: white;
 }
-/* line 69, _layout.scss */
+/* line 78, _layout.scss */
 #projects h2, #projects a {
   margin-bottom: 0.71429rem;
   margin-top: 0.71429rem;
 }
-/* line 74, _layout.scss */
+/* line 83, _layout.scss */
 #projects td:first-of-type h2 {
   text-align: right;
 }
-/* line 78, _layout.scss */
+/* line 87, _layout.scss */
 #projects td:not(:last-child) {
   padding: 0 0.71429rem 0 0;
 }
 
-/* line 87, _layout.scss */
+/* line 96, _layout.scss */
 #resume .position {
   padding-bottom: 1.42857rem;
 }
-/* line 91, _layout.scss */
+/* line 100, _layout.scss */
 #resume h3 {
   font-size: 1.28571rem;
   line-height: 2.14286rem;
-  text-align: left;
   margin: 0;
 }
-/* line 98, _layout.scss */
+/* line 106, _layout.scss */
 #resume h3 a {
   font-weight: bold;
   font-style: normal;
 }
-/* line 103, _layout.scss */
+/* line 111, _layout.scss */
 #resume p {
   margin: 0;
 }
-/* line 107, _layout.scss */
+/* line 115, _layout.scss */
 #resume p:first-of-type {
   color: #656565;
+  text-align: center;
 }
 
-/* line 113, _layout.scss */
+/* line 124, _layout.scss */
 #blog article h1 {
-  margin: 0;
+  margin-bottom: 0.35714rem;
+}
+/* line 127, _layout.scss */
+#blog article p {
+  margin-bottom: 0;
 }

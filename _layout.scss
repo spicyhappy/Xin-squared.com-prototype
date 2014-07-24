@@ -4,40 +4,19 @@
 	box-sizing: border-box;
 }
 
+html {
+	overflow-y: scroll;
+}
+
 html, body {
 	height: 100%;
 }
 
-body {
-	border-top: 2px solid $red;
-}
-
-header.full-page, section, footer {
+header, footer, section {
 	padding: (60/14) + rem (20/14) + rem;
 }
 
-
-
-header .contact-info {
-	margin-bottom: (40/14) + rem;
-}
-
-table {
-	width: 100%;
-}
-
-footer {
-	background: rgba($black, .8);
-	color: white;
-
-	button, .button, button:visited, button:active, .button:active, .button:visited {
-		color: white;
-		background-color: rgba($red, .6);
-		border: 0;
-	}
-}
-
-.full-page {
+header.full-page {
 	height: 100%;
 	width: 100%;
 	display: table;
@@ -53,10 +32,40 @@ footer {
 	}
 }
 
+table {
+	width: 100%;
+}
+
+footer {
+	text-align: center;
+	background: rgba($black, .8);
+	color: white;
+	height: 100%;
+	width: 100%;
+
+	button, .button, button:visited, button:active, .button:active, .button:visited {
+		color: white;
+		background-color: rgba($red, .6);
+		border: 0;
+	}
+}
+
+section .inner, footer .inner, header .inner {
+	max-width: (560/14) + rem;
+	margin: 0 auto;
+}
+
+article {
+	padding-bottom: (30/14) + rem;
+}
+
+
+
 .site-nav {
 	position: absolute;
 	width: 100%;
-	margin: (20/14) + rem 0;
+	padding: (20/14) + rem 0;
+	border-top: 2px solid $red;
 }
 
 .footer-nav {
@@ -91,7 +100,6 @@ footer {
 	h3 {
 		font-size: (18/14) + rem;
 		line-height: (30/14) + rem;
-		text-align: left;
 		margin: 0;
 	}
 
@@ -106,11 +114,18 @@ footer {
 
 	p:first-of-type {
 		color: $gray;
+		text-align: center;
 	}
 }
 
 #blog {
-	article h1 {
-		margin: 0;
+	article {
+
+		h1 {
+			margin-bottom: (5/14) + rem;
+		}
+		p {
+			margin-bottom: 0;
+		}
 	}
 }
