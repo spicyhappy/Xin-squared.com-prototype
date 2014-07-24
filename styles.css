@@ -132,12 +132,12 @@ a:after, a:visited:after, a:active:after {
 }
 
 /* line 67, _typography.scss */
-h2 a:after, h3 a:after {
+h2 a:after, h2 a:visited:after, h2 a:active:after, h3 a:after, h3 a:visited:after, h3 a:active:after {
   bottom: 0.21429rem;
 }
 
 /* line 71, _typography.scss */
-h1 a:after {
+h1 a:after, h1 a:visited:after, h1 a:active:after {
   border: none;
 }
 
