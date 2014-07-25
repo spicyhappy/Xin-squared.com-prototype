@@ -105,7 +105,7 @@ p {
 }
 
 /* line 42, _typography.scss */
-a, a:visited, a:active {
+a, a:visited, a:active, nav li {
   color: inherit;
   text-decoration: none;
   -webkit-transition-property: opacity;
@@ -121,7 +121,7 @@ a, a:visited, a:active {
 }
 
 /* line 57, _typography.scss */
-a:after, a:visited:after, a:active:after {
+a:after, a:visited:after, a:active:after, nav li:after {
   border-bottom: 1px solid;
   width: 100%;
   content: '';
@@ -141,24 +141,33 @@ a:hover, a:visited:hover {
   opacity: .5;
 }
 
-/* line 75, _typography.scss */
-h1 a:after, h1 a:visited:after, h1 a:active:after, h1 a:hover, button:hover:after, .button:hover:after {
+/* line 76, _typography.scss */
+nav a {
+  padding: 0 0.71429rem;
+}
+/* line 79, _typography.scss */
+nav a:after, nav a:visited:after, nav a:active:after {
   border: none;
 }
 
-/* line 79, _typography.scss */
-a.current {
+/* line 84, _typography.scss */
+a.current li:after, h1 a:after, h1 a:visited:after, h1 a:active:after, h1 a:hover, button:hover:after, .button:hover:after {
+  border: none;
+}
+
+/* line 88, _typography.scss */
+a.current, a.current li {
   pointer-events: none;
   cursor: default;
   border: 0;
 }
 
-/* line 85, _typography.scss */
+/* line 94, _typography.scss */
 a.current:after {
   border-bottom: none;
 }
 
-/* line 89, _typography.scss */
+/* line 98, _typography.scss */
 .caption, header h2, fieldset h1, fieldset h2, nav a {
   font-family: "adelle", georgia, serif;
   font-weight: 700;
@@ -169,19 +178,19 @@ a.current:after {
   text-transform: uppercase;
 }
 
-/* line 99, _typography.scss */
+/* line 108, _typography.scss */
 section fieldset {
   border: 0;
   border-top: 1px solid;
   text-align: center;
   margin-bottom: 0.71429rem;
 }
-/* line 105, _typography.scss */
+/* line 114, _typography.scss */
 section fieldset legend {
   padding: 0 0.71429rem;
 }
 
-/* line 110, _typography.scss */
+/* line 119, _typography.scss */
 button, .button, a:visited.button, a:active.button {
   display: inline-block;
   outline: 0;
@@ -203,34 +212,34 @@ button, .button, a:visited.button, a:active.button {
   border-radius: 3.57143rem;
 }
 
-/* line 131, _typography.scss */
+/* line 140, _typography.scss */
 button:after, button:visited:after, .button:active:after, .button:after, .button:visited:after, .button:active:after {
   border-bottom: none;
 }
 
-/* line 136, _typography.scss */
+/* line 145, _typography.scss */
 button:hover, .button:hover, button:visited:hover, .button:visited:hover {
   opacity: 1;
   background-color: #ff4a40;
   color: white;
 }
 
-/* line 142, _typography.scss */
+/* line 151, _typography.scss */
 button:last-of-type, .button:last-of-type, a:visited.button:last-of-type, a:active.button:last-of-type {
   margin-right: 0;
 }
 
-/* line 146, _typography.scss */
+/* line 155, _typography.scss */
 nav, .nav {
   text-align: center;
 }
-/* line 148, _typography.scss */
+/* line 157, _typography.scss */
 nav ul, nav li, .nav ul, .nav li {
   display: inline-block;
   padding: 0;
 }
 
-/* line 154, _typography.scss */
+/* line 163, _typography.scss */
 .contact-info {
   text-align: center;
   padding-bottom: 1.42857rem;
@@ -306,7 +315,7 @@ article {
   padding-bottom: 2.14286rem;
 }
 
-/* line 64, _layout.scss */
+/* line 62, _layout.scss */
 .site-nav {
   position: absolute;
   width: 100%;
@@ -314,57 +323,57 @@ article {
   border-top: 2px solid #ff4a40;
 }
 
-/* line 71, _layout.scss */
+/* line 69, _layout.scss */
 .footer-nav {
   margin: 1.42857rem 0;
 }
 
-/* line 75, _layout.scss */
+/* line 73, _layout.scss */
 #projects {
   padding: 2.85714rem 1.42857rem;
   background-color: #15bded;
   color: white;
 }
-/* line 78, _layout.scss */
+/* line 76, _layout.scss */
 #projects h2, #projects a {
   margin-bottom: 0.71429rem;
   margin-top: 0.71429rem;
 }
-/* line 83, _layout.scss */
+/* line 81, _layout.scss */
 #projects td:first-of-type h2 {
   text-align: right;
 }
-/* line 87, _layout.scss */
+/* line 85, _layout.scss */
 #projects td:not(:last-child) {
   padding: 0 0.71429rem 0 0;
 }
 
-/* line 96, _layout.scss */
+/* line 94, _layout.scss */
 #resume .position {
   padding-bottom: 2.14286rem;
 }
-/* line 100, _layout.scss */
+/* line 98, _layout.scss */
 #resume h3 {
   font-size: 1.28571rem;
   line-height: 2.14286rem;
   margin: 0;
 }
-/* line 106, _layout.scss */
+/* line 104, _layout.scss */
 #resume h3 a {
   font-weight: bold;
   font-style: normal;
 }
-/* line 111, _layout.scss */
+/* line 109, _layout.scss */
 #resume p {
   margin: 0;
 }
-/* line 115, _layout.scss */
+/* line 113, _layout.scss */
 #resume p:first-of-type {
   color: #656565;
   text-align: center;
 }
 
-/* line 123, _layout.scss */
+/* line 121, _layout.scss */
 #blog article h1, #blog article p {
   margin-bottom: 0;
 }

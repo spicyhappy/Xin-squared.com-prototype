@@ -39,7 +39,7 @@ p {
 	margin-bottom: (20/14) + rem;
 }
 
-a, a:visited, a:active {
+a, a:visited, a:active, nav li {
 	color: inherit;
 	text-decoration: none;
 	-webkit-transition-property: opacity;
@@ -54,7 +54,7 @@ a, a:visited, a:active {
 	position: relative;
 }
 
-a:after, a:visited:after, a:active:after {
+a:after, a:visited:after, a:active:after, nav li:after{
 	border-bottom: 1px solid;
 	width: 100%;
 	content:'';
@@ -72,11 +72,20 @@ a:hover, a:visited:hover {
 	opacity: .5;
 }
 
-h1 a:after, h1 a:visited:after, h1 a:active:after, h1 a:hover, button:hover:after, .button:hover:after {
+nav {
+	a {
+		padding: 0 (10/14) + rem;
+	}
+	a:after, a:visited:after, a:active:after {
+		border: none;
+	}
+}
+
+a.current li:after, h1 a:after, h1 a:visited:after, h1 a:active:after, h1 a:hover, button:hover:after, .button:hover:after {
 	border: none;
 }
 
-a.current {
+a.current, a.current li {
 	pointer-events: none;
 	cursor: default;
 	border: 0;
