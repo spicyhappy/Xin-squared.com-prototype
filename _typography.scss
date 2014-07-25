@@ -118,9 +118,11 @@ section fieldset {
 
 button, .button, a:visited.button, a:active.button {
 	display: inline-block;
+	position: relative;
 	outline: 0;
 	margin-bottom: (10/14) + rem;
 	margin-right: (10/14) + rem;
+	min-width: (40/14) + rem;
 	font-weight: 700;
 	color: $red;
 	font-size: (12/14) + rem;
@@ -160,7 +162,44 @@ nav, .nav {
 	}
 }
 
+.state, .state-full { cursor: pointer; }
+.state-full { display: none; }
+.state span { float: left; }
+
 .contact-info {
 	text-align: center;
 	padding-bottom: (20/14) + rem;
+
+	.icon {
+		font-size: (16/14) + rem;
+		line-height: (40/14) + rem;
+		position: absolute;
+		left: (12/14) + rem;
+	}
+
+	.detail {
+		display: none;
+	}
+
+	// .button {
+	// 	-webkit-transition-property: all;
+	// 	-moz-transition-property: all;
+	// 	-o-transition-property: all;
+	// 	transition-property: all;
+	// 	-webkit-transition-duration: 0.3s;
+	// 	-moz-transition-duration: 0.3s;
+	// 	-o-transition-duration: 0.3s;
+	// 	transition-duration: 0.3s;
+	// }
+
+	// .button:hover {
+	// 	[class^="icon-"], [class*=" icon-"] {
+	// 		display: none;
+	// 	}
+
+	// 	.detail {
+	// 		display: inherit;
+	// 		line-height: (40/14) + rem;
+	// 	}
+	// }
 }
