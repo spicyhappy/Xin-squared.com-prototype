@@ -94,7 +94,7 @@ article {
 
 #resume {
 	.position {
-		padding-bottom: (20/14) + rem;
+		padding-bottom: (30/14) + rem;
 	}
 
 	h3 {
@@ -120,11 +120,7 @@ article {
 
 #blog {
 	article {
-
-		h1 {
-			margin-bottom: (5/14) + rem;
-		}
-		p {
+		h1, p {
 			margin-bottom: 0;
 		}
 	}
