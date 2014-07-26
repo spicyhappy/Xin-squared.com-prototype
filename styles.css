@@ -260,21 +260,25 @@ nav ul, nav li, .nav ul, .nav li {
 .button .icon-down, button .icon-down {
   left: 0.78571rem;
 }
+/* line 186, _typography.scss */
+.button .icon-email, button .icon-email {
+  left: 0.78571rem;
+}
 
-/* line 187, _typography.scss */
+/* line 191, _typography.scss */
 .contact-info {
   text-align: center;
   padding-bottom: 1.42857rem;
 }
-/* line 191, _typography.scss */
+/* line 195, _typography.scss */
 .contact-info .detail {
   display: none;
 }
-/* line 196, _typography.scss */
+/* line 200, _typography.scss */
 .contact-info .button:hover .icon {
   display: none;
 }
-/* line 200, _typography.scss */
+/* line 204, _typography.scss */
 .contact-info .button:hover .detail {
   display: inherit;
   line-height: 2.85714rem;
@@ -320,11 +324,20 @@ header.full-page .inner button, header.full-page .inner .button {
 }
 
 /* line 35, _layout.scss */
+header {
+  text-align: center;
+}
+/* line 38, _layout.scss */
+header h1 {
+  margin-top: 2.14286rem;
+}
+
+/* line 43, _layout.scss */
 table {
   width: 100%;
 }
 
-/* line 39, _layout.scss */
+/* line 47, _layout.scss */
 footer {
   text-align: center;
   background: rgba(17, 17, 17, 0.8) url(images/XinXin-Great-Wall01.jpg) no-repeat center center fixed;
@@ -339,13 +352,13 @@ footer {
   width: 100%;
   position: relative;
 }
-/* line 53, _layout.scss */
+/* line 61, _layout.scss */
 footer button, footer .button, footer button:visited, footer button:active, footer .button:active, footer .button:visited {
   color: white;
   background-color: rgba(255, 74, 64, 0.6);
   border: 0;
 }
-/* line 59, _layout.scss */
+/* line 67, _layout.scss */
 footer:before {
   background: rgba(17, 17, 17, 0.5);
   content: "";
@@ -356,23 +369,23 @@ footer:before {
   left: 0;
   right: 0;
 }
-/* line 70, _layout.scss */
+/* line 78, _layout.scss */
 footer .inner {
   position: relative;
 }
 
-/* line 75, _layout.scss */
+/* line 83, _layout.scss */
 section .inner, footer .inner, header .inner {
   max-width: 40rem;
   margin: 0 auto;
 }
 
-/* line 80, _layout.scss */
+/* line 88, _layout.scss */
 article {
   padding-bottom: 2.14286rem;
 }
 
-/* line 84, _layout.scss */
+/* line 92, _layout.scss */
 .site-nav {
   position: absolute;
   width: 100%;
@@ -380,59 +393,65 @@ article {
   border-top: 2px solid #ff4a40;
 }
 
-/* line 91, _layout.scss */
+/* line 99, _layout.scss */
 .footer-nav {
   margin: 1.42857rem 0;
 }
 
-/* line 95, _layout.scss */
+/* line 103, _layout.scss */
 #projects {
   padding: 2.85714rem 1.42857rem;
   background-color: #15bded;
   color: white;
 }
-/* line 98, _layout.scss */
+/* line 106, _layout.scss */
 #projects h2, #projects a {
   margin-bottom: 0.71429rem;
   margin-top: 0.71429rem;
 }
-/* line 103, _layout.scss */
+/* line 111, _layout.scss */
 #projects td:first-of-type h2 {
   text-align: right;
 }
-/* line 107, _layout.scss */
+/* line 115, _layout.scss */
 #projects td:not(:last-child) {
   padding: 0 0.71429rem 0 0;
 }
 
-/* line 116, _layout.scss */
+/* line 124, _layout.scss */
 #resume .position {
   padding-bottom: 2.14286rem;
 }
-/* line 120, _layout.scss */
+/* line 128, _layout.scss */
 #resume h3 {
   font-size: 1.28571rem;
   line-height: 2.14286rem;
   margin: 0;
 }
-/* line 126, _layout.scss */
+/* line 134, _layout.scss */
 #resume h3 a {
   font-weight: bold;
   font-style: normal;
 }
-/* line 131, _layout.scss */
+/* line 139, _layout.scss */
 #resume p {
   margin: 0;
 }
-/* line 135, _layout.scss */
+/* line 143, _layout.scss */
 #resume p:first-of-type {
   color: #656565;
   text-align: center;
 }
 
-/* line 143, _layout.scss */
+/* line 151, _layout.scss */
 #blog article h1, #blog article p {
   margin-bottom: 0;
+}
+
+/* line 157, _layout.scss */
+header.case-study {
+  background: #111111;
+  color: white;
 }
 
 @font-face {
