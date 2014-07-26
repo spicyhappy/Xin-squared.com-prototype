@@ -137,7 +137,7 @@ button, .button, a:visited.button, a:active.button {
 	font-size: (12/14) + rem;
 	letter-spacing: (1/14) + rem;
 	text-transform: uppercase;
-	line-height: (38/14) + rem;
+	line-height: (40/14) + rem;
 	height: (40/14) + rem;
 	background-color: none;
 	padding: 0 (10/14) + rem;
@@ -203,7 +203,6 @@ nav, .nav {
 
 		.detail {
 			display: inherit;
-			line-height: (40/14) + rem;
 		}
 	}
 }

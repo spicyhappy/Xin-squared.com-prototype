@@ -50,4 +50,10 @@
 		font-size: (22/16) + rem;
 		line-height: (30/16) + rem;
 	}
+
+	.button, button {
+		.icon {
+			top: (-1/28) + rem;
+		}
+	}
 }
