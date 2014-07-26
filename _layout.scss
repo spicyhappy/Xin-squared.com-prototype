@@ -94,6 +94,8 @@ article {
 	width: 100%;
 	padding: (20/14) + rem 0;
 	border-top: 2px solid $red;
+	top: 0;
+	z-index: 1000;
 }
 
 .footer-nav {
@@ -154,7 +156,34 @@ article {
 	}
 }
 
-header.case-study {
-	background: $black;
+nav.case-study, header.case-study {
 	color: white;
+}
+
+header.case-study {
+	text-align: center;
+	background: rgba($black, .8);
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/XinXin-Great-Wall01.jpg', sizingMethod='scale')  !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/XinXin-Great-Wall01.jpg', sizingMethod='scale')"  !important;
+	color: white;
+	position: relative;
+
+	&:before {
+		background: rgba($black, .5);
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.inner {
+		position: relative;
+	}
 }

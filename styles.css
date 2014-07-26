@@ -391,67 +391,97 @@ article {
   width: 100%;
   padding: 1.42857rem 0;
   border-top: 2px solid #ff4a40;
+  top: 0;
+  z-index: 1000;
 }
 
-/* line 99, _layout.scss */
+/* line 101, _layout.scss */
 .footer-nav {
   margin: 1.42857rem 0;
 }
 
-/* line 103, _layout.scss */
+/* line 105, _layout.scss */
 #projects {
   padding: 2.85714rem 1.42857rem;
   background-color: #15bded;
   color: white;
 }
-/* line 106, _layout.scss */
+/* line 108, _layout.scss */
 #projects h2, #projects a {
   margin-bottom: 0.71429rem;
   margin-top: 0.71429rem;
 }
-/* line 111, _layout.scss */
+/* line 113, _layout.scss */
 #projects td:first-of-type h2 {
   text-align: right;
 }
-/* line 115, _layout.scss */
+/* line 117, _layout.scss */
 #projects td:not(:last-child) {
   padding: 0 0.71429rem 0 0;
 }
 
-/* line 124, _layout.scss */
+/* line 126, _layout.scss */
 #resume .position {
   padding-bottom: 2.14286rem;
 }
-/* line 128, _layout.scss */
+/* line 130, _layout.scss */
 #resume h3 {
   font-size: 1.28571rem;
   line-height: 2.14286rem;
   margin: 0;
 }
-/* line 134, _layout.scss */
+/* line 136, _layout.scss */
 #resume h3 a {
   font-weight: bold;
   font-style: normal;
 }
-/* line 139, _layout.scss */
+/* line 141, _layout.scss */
 #resume p {
   margin: 0;
 }
-/* line 143, _layout.scss */
+/* line 145, _layout.scss */
 #resume p:first-of-type {
   color: #656565;
   text-align: center;
 }
 
-/* line 151, _layout.scss */
+/* line 153, _layout.scss */
 #blog article h1, #blog article p {
   margin-bottom: 0;
 }
 
-/* line 157, _layout.scss */
-header.case-study {
-  background: #111111;
+/* line 159, _layout.scss */
+nav.case-study, header.case-study {
   color: white;
+}
+
+/* line 163, _layout.scss */
+header.case-study {
+  text-align: center;
+  background: rgba(17, 17, 17, 0.8);
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/XinXin-Great-Wall01.jpg', sizingMethod='scale') !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/XinXin-Great-Wall01.jpg', sizingMethod='scale')"  !important;
+  color: white;
+  position: relative;
+}
+/* line 175, _layout.scss */
+header.case-study:before {
+  background: rgba(17, 17, 17, 0.5);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 186, _layout.scss */
+header.case-study .inner {
+  position: relative;
 }
 
 @font-face {
