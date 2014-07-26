@@ -584,12 +584,41 @@ header.case-study .inner {
     font-size: 1rem;
     line-height: 1rem;
   }
+
+  /* line 11, _media-queries.scss */
+  #resume p:first-of-type {
+    text-align: left;
+  }
+  /* line 15, _media-queries.scss */
+  #resume h3 {
+    font-size: 1rem;
+    line-height: 2.14286rem;
+    text-align: left;
+  }
 }
 @media only screen and (min-width: 960px) {
-  /* line 12, _media-queries.scss */
+  /* line 24, _media-queries.scss */
   html {
     font-size: 100%;
     font-size: 1.125rem;
     line-height: 1.125rem;
+  }
+
+  /* line 30, _media-queries.scss */
+  h1 {
+    font-size: 2.9375rem;
+    line-height: 3.6875rem;
+  }
+
+  /* line 35, _media-queries.scss */
+  h2 {
+    font-size: 1.8125rem;
+    line-height: 2.5rem;
+  }
+
+  /* line 40, _media-queries.scss */
+  h3 {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
   }
 }

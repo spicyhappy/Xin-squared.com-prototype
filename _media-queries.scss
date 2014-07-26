@@ -6,6 +6,18 @@
 		font-size: (16/16) + rem;
 		line-height: (16/16) + rem;
 	}
+
+	#resume {
+		p:first-of-type {
+			text-align: left;
+		}
+
+		h3 {
+			font-size: (14/14) + rem;
+			line-height: (30/14) + rem;
+			text-align: left;
+		}
+	}
 }
 
 @media only screen and (min-width: 960px) {
@@ -13,5 +25,20 @@
 		font-size: 100%;
 		font-size: (18/16) + rem;
 		line-height: (18/16) + rem;
+	}
+
+	h1 {
+		font-size: (47/16) + rem;
+		line-height: (59/16) + rem;
+	}
+
+	h2 {
+		font-size: (29/16) + rem;
+		line-height: (40/16) + rem;
+	}
+
+	h3 {
+		font-size: (22/16) + rem;
+		line-height: (30/16) + rem;
 	}
 }
