@@ -43,6 +43,8 @@ footer {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/XinXin-Great-Wall01.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/XinXin-Great-Wall01.jpg', sizingMethod='scale')";
 	color: white;
 	height: 100%;
 	width: 100%;

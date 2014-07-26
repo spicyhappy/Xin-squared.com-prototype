@@ -201,12 +201,12 @@ button, .button, a:visited.button, a:active.button {
   font-weight: 700;
   color: #ff4a40;
   font-size: 0.85714rem;
-  letter-spacing: 0.17857rem;
+  letter-spacing: 0.07143rem;
   text-transform: uppercase;
   line-height: 2.71429rem;
   height: 2.85714rem;
   background-color: none;
-  padding: 0 1.07143rem;
+  padding: 0 0.71429rem;
   border: 1px solid #ff4a40;
   cursor: pointer;
   -webkit-border-radius: 3.57143rem;
@@ -324,18 +324,20 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/XinXin-Great-Wall01.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/XinXin-Great-Wall01.jpg', sizingMethod='scale')";
   color: white;
   height: 100%;
   width: 100%;
   position: relative;
 }
-/* line 51, _layout.scss */
+/* line 53, _layout.scss */
 footer button, footer .button, footer button:visited, footer button:active, footer .button:active, footer .button:visited {
   color: white;
   background-color: rgba(255, 74, 64, 0.6);
   border: 0;
 }
-/* line 57, _layout.scss */
+/* line 59, _layout.scss */
 footer:before {
   background: rgba(17, 17, 17, 0.5);
   content: "";
@@ -346,23 +348,23 @@ footer:before {
   left: 0;
   right: 0;
 }
-/* line 68, _layout.scss */
+/* line 70, _layout.scss */
 footer .inner {
   position: relative;
 }
 
-/* line 73, _layout.scss */
+/* line 75, _layout.scss */
 section .inner, footer .inner, header .inner {
   max-width: 40rem;
   margin: 0 auto;
 }
 
-/* line 78, _layout.scss */
+/* line 80, _layout.scss */
 article {
   padding-bottom: 2.14286rem;
 }
 
-/* line 82, _layout.scss */
+/* line 84, _layout.scss */
 .site-nav {
   position: absolute;
   width: 100%;
@@ -370,57 +372,57 @@ article {
   border-top: 2px solid #ff4a40;
 }
 
-/* line 89, _layout.scss */
+/* line 91, _layout.scss */
 .footer-nav {
   margin: 1.42857rem 0;
 }
 
-/* line 93, _layout.scss */
+/* line 95, _layout.scss */
 #projects {
   padding: 2.85714rem 1.42857rem;
   background-color: #15bded;
   color: white;
 }
-/* line 96, _layout.scss */
+/* line 98, _layout.scss */
 #projects h2, #projects a {
   margin-bottom: 0.71429rem;
   margin-top: 0.71429rem;
 }
-/* line 101, _layout.scss */
+/* line 103, _layout.scss */
 #projects td:first-of-type h2 {
   text-align: right;
 }
-/* line 105, _layout.scss */
+/* line 107, _layout.scss */
 #projects td:not(:last-child) {
   padding: 0 0.71429rem 0 0;
 }
 
-/* line 114, _layout.scss */
+/* line 116, _layout.scss */
 #resume .position {
   padding-bottom: 2.14286rem;
 }
-/* line 118, _layout.scss */
+/* line 120, _layout.scss */
 #resume h3 {
   font-size: 1.28571rem;
   line-height: 2.14286rem;
   margin: 0;
 }
-/* line 124, _layout.scss */
+/* line 126, _layout.scss */
 #resume h3 a {
   font-weight: bold;
   font-style: normal;
 }
-/* line 129, _layout.scss */
+/* line 131, _layout.scss */
 #resume p {
   margin: 0;
 }
-/* line 133, _layout.scss */
+/* line 135, _layout.scss */
 #resume p:first-of-type {
   color: #656565;
   text-align: center;
 }
 
-/* line 141, _layout.scss */
+/* line 143, _layout.scss */
 #blog article h1, #blog article p {
   margin-bottom: 0;
 }
