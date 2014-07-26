@@ -1,6 +1,15 @@
 @import 'variables';
 
+.big-screen {
+	display: none;
+}
+
 @media only screen and (min-width: 600px) {
+
+	.big-screen {
+		display: inherit;
+	}
+
 	html {
 		font-size: 100%;
 		font-size: (16/16) + rem;
