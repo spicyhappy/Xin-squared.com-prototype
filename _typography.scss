@@ -39,17 +39,17 @@ p {
 	margin-bottom: (20/14) + rem;
 }
 
-a, a:visited, a:active, nav li {
+a, a:visited, a:active, nav li, a:not(button), a:not(.button) {
 	color: inherit;
 	text-decoration: none;
-	-webkit-transition-property: opacity;
-	-moz-transition-property: opacity;
-	-o-transition-property: opacity;
-	transition-property: opacity;
-	-webkit-transition-duration: 0.3s;
-	-moz-transition-duration: 0.3s;
-	-o-transition-duration: 0.3s;
-	transition-duration: 0.3s;
+	-webkit-transition-property: all;
+	-moz-transition-property: all;
+	-o-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 	-webkit-backface-visibility: hidden;
 	position: relative;
 }
@@ -162,14 +162,10 @@ nav, .nav {
 	}
 }
 
-.state, .state-full { cursor: pointer; }
-.state-full { display: none; }
-.state span { float: left; }
-
 .contact-info {
 	text-align: center;
 	padding-bottom: (20/14) + rem;
-
+	
 	.icon {
 		font-size: (16/14) + rem;
 		line-height: (40/14) + rem;
@@ -181,25 +177,14 @@ nav, .nav {
 		display: none;
 	}
 
-	// .button {
-	// 	-webkit-transition-property: all;
-	// 	-moz-transition-property: all;
-	// 	-o-transition-property: all;
-	// 	transition-property: all;
-	// 	-webkit-transition-duration: 0.3s;
-	// 	-moz-transition-duration: 0.3s;
-	// 	-o-transition-duration: 0.3s;
-	// 	transition-duration: 0.3s;
-	// }
+	.button:hover {
+		.icon {
+			display: none;
+		}
 
-	// .button:hover {
-	// 	[class^="icon-"], [class*=" icon-"] {
-	// 		display: none;
-	// 	}
-
-	// 	.detail {
-	// 		display: inherit;
-	// 		line-height: (40/14) + rem;
-	// 	}
-	// }
+		.detail {
+			display: inherit;
+			line-height: (40/14) + rem;
+		}
+	}
 }
