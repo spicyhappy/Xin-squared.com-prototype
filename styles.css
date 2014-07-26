@@ -145,29 +145,37 @@ a:hover, a:visited:hover {
 nav a {
   padding: 0 0.71429rem;
 }
-/* line 79, _typography.scss */
+/* line 80, _typography.scss */
+nav a:first-of-type {
+  padding-left: 0;
+}
+/* line 84, _typography.scss */
+nav a:last-of-type {
+  padding-right: 0;
+}
+/* line 88, _typography.scss */
 nav a:after, nav a:visited:after, nav a:active:after {
   border: none;
 }
 
-/* line 84, _typography.scss */
+/* line 93, _typography.scss */
 a.current li:after, h1 a:after, h1 a:visited:after, h1 a:active:after, h1 a:hover, button:hover:after, .button:hover:after {
   border: none;
 }
 
-/* line 88, _typography.scss */
+/* line 97, _typography.scss */
 a.current, a.current li {
   pointer-events: none;
   cursor: default;
   border: 0;
 }
 
-/* line 94, _typography.scss */
+/* line 103, _typography.scss */
 a.current:after {
   border-bottom: none;
 }
 
-/* line 98, _typography.scss */
+/* line 107, _typography.scss */
 .caption, header h2, fieldset h1, fieldset h2, nav a {
   font-family: "adelle", georgia, serif;
   font-weight: 700;
@@ -178,19 +186,19 @@ a.current:after {
   text-transform: uppercase;
 }
 
-/* line 108, _typography.scss */
+/* line 117, _typography.scss */
 section fieldset {
   border: 0;
   border-top: 1px solid;
   text-align: center;
   margin-bottom: 0.71429rem;
 }
-/* line 114, _typography.scss */
+/* line 123, _typography.scss */
 section fieldset legend {
   padding: 0 0.71429rem;
 }
 
-/* line 119, _typography.scss */
+/* line 128, _typography.scss */
 button, .button, a:visited.button, a:active.button {
   display: inline-block;
   position: relative;
@@ -214,59 +222,59 @@ button, .button, a:visited.button, a:active.button {
   border-radius: 3.57143rem;
 }
 
-/* line 142, _typography.scss */
+/* line 151, _typography.scss */
 button:after, button:visited:after, .button:active:after, .button:after, .button:visited:after, .button:active:after {
   border-bottom: none;
 }
 
-/* line 147, _typography.scss */
+/* line 156, _typography.scss */
 button:hover, .button:hover, button:visited:hover, .button:visited:hover {
   opacity: 1;
   background-color: #ff4a40;
   color: white;
 }
 
-/* line 153, _typography.scss */
+/* line 162, _typography.scss */
 button:last-of-type, .button:last-of-type, a:visited.button:last-of-type, a:active.button:last-of-type {
   margin-right: 0;
 }
 
-/* line 157, _typography.scss */
+/* line 166, _typography.scss */
 nav, .nav {
   text-align: center;
 }
-/* line 159, _typography.scss */
+/* line 168, _typography.scss */
 nav ul, nav li, .nav ul, .nav li {
   display: inline-block;
   padding: 0;
 }
 
-/* line 166, _typography.scss */
+/* line 175, _typography.scss */
 .button .icon, button .icon {
   font-size: 1.14286rem;
   line-height: 2.85714rem;
   position: absolute;
   left: 0.85714rem;
 }
-/* line 173, _typography.scss */
+/* line 182, _typography.scss */
 .button .icon-down, button .icon-down {
   left: 0.78571rem;
 }
 
-/* line 178, _typography.scss */
+/* line 187, _typography.scss */
 .contact-info {
   text-align: center;
   padding-bottom: 1.42857rem;
 }
-/* line 182, _typography.scss */
+/* line 191, _typography.scss */
 .contact-info .detail {
   display: none;
 }
-/* line 187, _typography.scss */
+/* line 196, _typography.scss */
 .contact-info .button:hover .icon {
   display: none;
 }
-/* line 191, _typography.scss */
+/* line 200, _typography.scss */
 .contact-info .button:hover .detail {
   display: inherit;
   line-height: 2.85714rem;
