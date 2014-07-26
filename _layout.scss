@@ -1,3 +1,5 @@
+@import 'variables';
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -82,7 +84,7 @@ footer {
 }
 
 section .inner, footer .inner, header .inner {
-	max-width: (560/14) + rem;
+	max-width: (420/14) + rem;
 	margin: 0 auto;
 }
 
