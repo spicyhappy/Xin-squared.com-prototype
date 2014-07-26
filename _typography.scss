@@ -162,16 +162,22 @@ nav, .nav {
 	}
 }
 
-.contact-info {
-	text-align: center;
-	padding-bottom: (20/14) + rem;
-	
+.button, button {
 	.icon {
 		font-size: (16/14) + rem;
 		line-height: (40/14) + rem;
 		position: absolute;
 		left: (12/14) + rem;
 	}
+
+	.icon-down {
+		left: (11/14) + rem;
+	}
+}
+
+.contact-info {
+	text-align: center;
+	padding-bottom: (20/14) + rem;
 
 	.detail {
 		display: none;

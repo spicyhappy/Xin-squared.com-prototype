@@ -38,15 +38,35 @@ table {
 
 footer {
 	text-align: center;
-	background: rgba($black, .8);
+	background: rgba($black, .8) url(images/XinXin-Great-Wall01.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	color: white;
 	height: 100%;
 	width: 100%;
+	position: relative;
 
 	button, .button, button:visited, button:active, .button:active, .button:visited {
 		color: white;
 		background-color: rgba($red, .6);
 		border: 0;
+	}
+
+	&:before {
+		background: rgba($black, .5);
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.inner {
+		position: relative;
 	}
 }
 
