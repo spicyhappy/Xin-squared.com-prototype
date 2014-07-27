@@ -71,7 +71,7 @@ a:after, a:visited:after, a:active:after, nav li:after{
     position:absolute;
     left:0;
     right:0;
-    bottom: 0;
+    bottom: (-1/14) + em;
 }
 
 h2 a:after, h2 a:visited:after, h2 a:active:after, h3 a:after, h3 a:visited:after, h3 a:active:after  {
@@ -80,6 +80,14 @@ h2 a:after, h2 a:visited:after, h2 a:active:after, h3 a:after, h3 a:visited:afte
 
 a:hover, a:visited:hover {
 	opacity: .5;
+}
+
+article a {
+	display: block;
+
+	&:after, &:visited:after, &:active:after {
+		border: 0;
+	}
 }
 
 nav {
@@ -145,8 +153,6 @@ button, .button, a:visited.button, a:active.button {
 	font-weight: 700;
 	color: $red;
 	font-size: (12/14) + rem;
-	letter-spacing: (1/14) + rem;
-	text-transform: uppercase;
 	line-height: (40/14) + rem;
 	height: (40/14) + rem;
 	background-color: none;
