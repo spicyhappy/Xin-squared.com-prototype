@@ -1,5 +1,9 @@
 @import 'variables';
 
+.cap-small-screen {
+	text-transform: capitalize;
+}
+
 .big-screen {
 	display: none;
 }
@@ -8,6 +12,10 @@
 
 	.big-screen {
 		display: inherit;
+	}
+
+	.cap-small-screen {
+		text-transform: inherit;
 	}
 
 	html {
