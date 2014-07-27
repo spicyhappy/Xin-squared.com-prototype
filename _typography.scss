@@ -9,6 +9,7 @@ html {
 	background-color: $gray-white;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	font-weight: 400;
 }
 
 ::selection {
@@ -37,6 +38,15 @@ h2, h3, article h1 {
 p {
 	line-height: (25/14) + rem;
 	margin-bottom: (20/14) + rem;
+}
+
+b, strong {
+	font-weight: 600;
+}
+
+em, i {
+	font-style: italic;
+	font-weight: 400;
 }
 
 a, a:visited, a:active, nav li, a:not(button), a:not(.button) {
@@ -132,7 +142,7 @@ button, .button, a:visited.button, a:active.button {
 	margin-bottom: (10/14) + rem;
 	margin-right: (10/14) + rem;
 	min-width: (40/14) + rem;
-	font-weight: 700;
+	font-weight: 600;
 	color: $red;
 	font-size: (12/14) + rem;
 	letter-spacing: (1/14) + rem;

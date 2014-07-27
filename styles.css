@@ -62,21 +62,22 @@ table {
 /* line 3, _typography.scss */
 html {
   font-size: 100%;
-  font-family: "adelle-sans", helvetica, arial, sans-serif;
+  font-family: "freight-sans-pro", helvetica, arial, sans-serif;
   font-size: 0.875rem;
   line-height: 1.5625rem;
   color: #111111;
   background-color: #fdfdfd;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  font-weight: 400;
 }
 
-/* line 14, _typography.scss */
+/* line 15, _typography.scss */
 ::selection {
   background: #00ffac;
 }
 
-/* line 18, _typography.scss */
+/* line 19, _typography.scss */
 h1, h2, h3 {
   font-family: "adelle", georgia, serif;
   font-style: italic;
@@ -84,27 +85,38 @@ h1, h2, h3 {
   text-align: center;
 }
 
-/* line 25, _typography.scss */
+/* line 26, _typography.scss */
 h1 {
   font-size: 2.57143rem;
   line-height: 3.57143rem;
   margin: 1.42857rem 0;
 }
 
-/* line 31, _typography.scss */
+/* line 32, _typography.scss */
 h2, h3, article h1 {
   font-size: 1.57143rem;
   line-height: 2.14286rem;
   margin-bottom: 1.42857rem;
 }
 
-/* line 37, _typography.scss */
+/* line 38, _typography.scss */
 p {
   line-height: 1.78571rem;
   margin-bottom: 1.42857rem;
 }
 
-/* line 42, _typography.scss */
+/* line 43, _typography.scss */
+b, strong {
+  font-weight: 600;
+}
+
+/* line 47, _typography.scss */
+em, i {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* line 52, _typography.scss */
 a, a:visited, a:active, nav li, a:not(button), a:not(.button) {
   color: inherit;
   text-decoration: none;
@@ -120,7 +132,7 @@ a, a:visited, a:active, nav li, a:not(button), a:not(.button) {
   position: relative;
 }
 
-/* line 57, _typography.scss */
+/* line 67, _typography.scss */
 a:after, a:visited:after, a:active:after, nav li:after {
   border-bottom: 1px solid;
   width: 100%;
@@ -131,51 +143,51 @@ a:after, a:visited:after, a:active:after, nav li:after {
   bottom: 0;
 }
 
-/* line 67, _typography.scss */
+/* line 77, _typography.scss */
 h2 a:after, h2 a:visited:after, h2 a:active:after, h3 a:after, h3 a:visited:after, h3 a:active:after {
   bottom: 0.07143rem;
 }
 
-/* line 71, _typography.scss */
+/* line 81, _typography.scss */
 a:hover, a:visited:hover {
   opacity: .5;
 }
 
-/* line 76, _typography.scss */
+/* line 86, _typography.scss */
 nav a {
   padding: 0 0.71429rem;
 }
-/* line 80, _typography.scss */
+/* line 90, _typography.scss */
 nav a:first-of-type {
   padding-left: 0;
 }
-/* line 84, _typography.scss */
+/* line 94, _typography.scss */
 nav a:last-of-type {
   padding-right: 0;
 }
-/* line 88, _typography.scss */
+/* line 98, _typography.scss */
 nav a:after, nav a:visited:after, nav a:active:after {
   border: none;
 }
 
-/* line 93, _typography.scss */
+/* line 103, _typography.scss */
 a.current li:after, h1 a:after, h1 a:visited:after, h1 a:active:after, h1 a:hover, button:hover:after, .button:hover:after {
   border: none;
 }
 
-/* line 97, _typography.scss */
+/* line 107, _typography.scss */
 a.current, a.current li {
   pointer-events: none;
   cursor: default;
   border: 0;
 }
 
-/* line 103, _typography.scss */
+/* line 113, _typography.scss */
 a.current:after {
   border-bottom: none;
 }
 
-/* line 107, _typography.scss */
+/* line 117, _typography.scss */
 .caption, header h2, fieldset h1, fieldset h2, nav a {
   font-family: "adelle", georgia, serif;
   font-weight: 700;
@@ -186,19 +198,19 @@ a.current:after {
   text-transform: uppercase;
 }
 
-/* line 117, _typography.scss */
+/* line 127, _typography.scss */
 section fieldset {
   border: 0;
   border-top: 1px solid;
   text-align: center;
   margin-bottom: 0.71429rem;
 }
-/* line 123, _typography.scss */
+/* line 133, _typography.scss */
 section fieldset legend {
   padding: 0 0.71429rem;
 }
 
-/* line 128, _typography.scss */
+/* line 138, _typography.scss */
 button, .button, a:visited.button, a:active.button {
   display: inline-block;
   position: relative;
@@ -206,7 +218,7 @@ button, .button, a:visited.button, a:active.button {
   margin-bottom: 0.71429rem;
   margin-right: 0.71429rem;
   min-width: 2.85714rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #ff4a40;
   font-size: 0.85714rem;
   letter-spacing: 0.07143rem;
@@ -222,63 +234,63 @@ button, .button, a:visited.button, a:active.button {
   border-radius: 3.57143rem;
 }
 
-/* line 151, _typography.scss */
+/* line 161, _typography.scss */
 button:after, button:visited:after, .button:active:after, .button:after, .button:visited:after, .button:active:after {
   border-bottom: none;
 }
 
-/* line 156, _typography.scss */
+/* line 166, _typography.scss */
 button:hover, .button:hover, button:visited:hover, .button:visited:hover {
   opacity: 1;
   background-color: #ff4a40;
   color: white;
 }
 
-/* line 162, _typography.scss */
+/* line 172, _typography.scss */
 button:last-of-type, .button:last-of-type, a:visited.button:last-of-type, a:active.button:last-of-type {
   margin-right: 0;
 }
 
-/* line 166, _typography.scss */
+/* line 176, _typography.scss */
 nav, .nav {
   text-align: center;
 }
-/* line 168, _typography.scss */
+/* line 178, _typography.scss */
 nav ul, nav li, .nav ul, .nav li {
   display: inline-block;
   padding: 0;
 }
 
-/* line 175, _typography.scss */
+/* line 185, _typography.scss */
 .button .icon, button .icon {
   font-size: 1.14286rem;
   line-height: 2.85714rem;
   position: absolute;
   left: 0.85714rem;
 }
-/* line 182, _typography.scss */
+/* line 192, _typography.scss */
 .button .icon-down, button .icon-down {
   left: 0.78571rem;
 }
-/* line 186, _typography.scss */
+/* line 196, _typography.scss */
 .button .icon-email, button .icon-email {
   left: 0.78571rem;
 }
 
-/* line 191, _typography.scss */
+/* line 201, _typography.scss */
 .contact-info {
   text-align: center;
   padding-bottom: 1.42857rem;
 }
-/* line 195, _typography.scss */
+/* line 205, _typography.scss */
 .contact-info .detail {
   display: none;
 }
-/* line 200, _typography.scss */
+/* line 210, _typography.scss */
 .contact-info .button:hover .icon {
   display: none;
 }
-/* line 204, _typography.scss */
+/* line 214, _typography.scss */
 .contact-info .button:hover .detail {
   display: inherit;
 }
