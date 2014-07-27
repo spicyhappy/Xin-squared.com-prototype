@@ -29,36 +29,36 @@
 	<div class="inner">
 		<fieldset><legend><h1>Projects</h1></legend></fieldset>
 		<table>
-			<tr>
+			<tr class="panjiva">
 				<td><a href="panjiva.html"><h2>Panjiva</h2></a></td>
 				<td><a href="panjiva.html"><span class="big-screen">software for </span>efficent global trade</a></td>
 			</tr>
 			</a>
-			<tr>
+			<tr class="blackhat">
 				<td><a href="#"><h2>Black Hat</h2></a></td>
 				<td><a href="#"><span class="big-screen">2 player asynchronous </span>virtual reality game</a></td>
 			</tr>
-			<tr>
+			<tr class="mcent">
 				<td><a href="#"><h2>mCent</h2></a></td>
 				<td><a href="#"><span class="big-screen">international </span>mobile crowdsourcing</a></td>
 			</tr>
-			<tr>
+			<tr class="medlert">
 				<td><a href="#"><h2>Medlert</h2></a></td>
 				<td><a href="#">life-saving medical app<span class="big-screen"> for seniors</span></a></td>
 			</tr>
-			<tr>
+			<tr class="squeezicks">
 				<td><a href="#"><h2>Squeezicks</h2></a></td>
 				<td><a href="#"><span class="big-screen">boston </span>museum<span class="big-screen"> of science</span> installation</a></td>
 			</tr>
-			<tr>
+			<tr class="games">
 				<td><a href="#"><h2>Games</h2></a></td>
 				<td><a href="#">fun experiments<span class="big-screen"> in interactivity</span></a></td>
 			</tr>
-			<tr>
+			<tr class="sketches">
 				<td><a href="#"><h2>Sketches</h2></a></td>
 				<td><a href="#">quick drawings</a></td>
 			</tr>
-			<tr>
+			<tr class="misc">
 				<td><a href="#"><h2>Misc</h2></a></td>
 				<td><a href="#">random bits</a></td>
 			</tr>
@@ -85,5 +85,17 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script>
+	$('.panjiva').mouseover(function() {
+		$('#projects').backstretch('images/XinXin-Great-Wall01.jpg');
+	});
+
+	$('.panjiva').mouseout(function() {
+		$('.backstretch').remove();
+		$('#projects').css({backgroundColor: "#15bded"});
+	});
+	
+</script>
 </body>
 </html>

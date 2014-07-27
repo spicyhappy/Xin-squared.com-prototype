@@ -363,7 +363,6 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: scroll;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/XinXin-Great-Wall01.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/XinXin-Great-Wall01.jpg', sizingMethod='scale')";
   color: white;
@@ -371,13 +370,13 @@ footer {
   width: 100%;
   position: relative;
 }
-/* line 64, _layout.scss */
+/* line 63, _layout.scss */
 footer button, footer .button, footer button:visited, footer button:active, footer .button:active, footer .button:visited {
   color: white;
   background-color: rgba(255, 74, 64, 0.6);
   border: 0;
 }
-/* line 70, _layout.scss */
+/* line 69, _layout.scss */
 footer:before {
   background: rgba(17, 17, 17, 0.5);
   content: "";
@@ -388,23 +387,23 @@ footer:before {
   left: 0;
   right: 0;
 }
-/* line 81, _layout.scss */
+/* line 80, _layout.scss */
 footer .inner {
   position: relative;
 }
 
-/* line 86, _layout.scss */
+/* line 85, _layout.scss */
 section .inner, footer .inner, header .inner {
   max-width: 30rem;
   margin: 0 auto;
 }
 
-/* line 91, _layout.scss */
+/* line 90, _layout.scss */
 article {
   padding-bottom: 2.14286rem;
 }
 
-/* line 95, _layout.scss */
+/* line 94, _layout.scss */
 .site-nav {
   position: absolute;
   width: 100%;
@@ -414,67 +413,67 @@ article {
   z-index: 1000;
 }
 
-/* line 104, _layout.scss */
+/* line 103, _layout.scss */
 .footer-nav {
   margin: 1.42857rem 0;
 }
 
-/* line 108, _layout.scss */
+/* line 107, _layout.scss */
 #projects {
   padding: 2.85714rem 1.42857rem;
   background-color: #15bded;
   color: white;
 }
-/* line 111, _layout.scss */
+/* line 110, _layout.scss */
 #projects h2, #projects a {
   margin-bottom: 0.71429rem;
   margin-top: 0.71429rem;
 }
-/* line 116, _layout.scss */
+/* line 115, _layout.scss */
 #projects td:first-of-type h2 {
   text-align: right;
 }
-/* line 120, _layout.scss */
+/* line 119, _layout.scss */
 #projects td:not(:last-child) {
   padding: 0 0.71429rem 0 0;
 }
 
-/* line 129, _layout.scss */
+/* line 128, _layout.scss */
 #resume .position {
   padding-bottom: 2.14286rem;
 }
-/* line 133, _layout.scss */
+/* line 132, _layout.scss */
 #resume h3 {
   font-size: 1.28571rem;
   line-height: 2.14286rem;
   margin: 0;
 }
-/* line 139, _layout.scss */
+/* line 138, _layout.scss */
 #resume h3 a {
   font-weight: bold;
   font-style: normal;
 }
-/* line 144, _layout.scss */
+/* line 143, _layout.scss */
 #resume p {
   margin: 0;
 }
-/* line 148, _layout.scss */
+/* line 147, _layout.scss */
 #resume p:first-of-type {
   color: #656565;
   text-align: center;
 }
 
-/* line 156, _layout.scss */
+/* line 155, _layout.scss */
 #blog article h1, #blog article p {
   margin-bottom: 0;
 }
 
-/* line 162, _layout.scss */
+/* line 161, _layout.scss */
 nav.case-study, header.case-study {
   color: white;
 }
 
-/* line 166, _layout.scss */
+/* line 165, _layout.scss */
 header.case-study {
   text-align: center;
   background: rgba(17, 17, 17, 0.8);
@@ -488,7 +487,7 @@ header.case-study {
   color: white;
   position: relative;
 }
-/* line 179, _layout.scss */
+/* line 178, _layout.scss */
 header.case-study:before {
   background: rgba(17, 17, 17, 0.5);
   content: "";
@@ -499,7 +498,7 @@ header.case-study:before {
   left: 0;
   right: 0;
 }
-/* line 190, _layout.scss */
+/* line 189, _layout.scss */
 header.case-study .inner {
   position: relative;
 }
