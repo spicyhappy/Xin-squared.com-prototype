@@ -108,12 +108,15 @@
 	];
 
 	$('#projects tr').hover(function() {
-		number = $(this).attr('class')
+		number = $(this).attr('class');
+		$(this).css({'opacity':'50%'});
 		$('#projects .backstretch-canvas').backstretch([projects[number]], {speed: 1000});
-		$('.backstretch').addClass("dim");
+		$('#projects').css({"background-color":"#111111"});
+		$('.backstretch').css({"opacity":".5", "filter":"alpha(opacity=60)"});
 	},
 		function() {
-			$('#projects .backstretch-canvas').backstretch(['images/XinXin-BackgroundBlue.jpg'], {speed: 200});
+			$('#projects').css({"background-color":"#15bded"});
+			$('#projects .backstretch-canvas').backstretch([projects[0]], {speed: 100});
 		}
 	);
 
