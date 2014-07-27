@@ -26,43 +26,49 @@
 </header>
 
 <section id="projects">
+	<div class="backstretch-canvas">
 	<div class="inner">
 		<fieldset><legend><h1>Projects</h1></legend></fieldset>
 		<table>
-			<tr class="panjiva">
+			<tr class="1">
 				<td><a href="panjiva.html"><h2>Panjiva</h2></a></td>
 				<td><a href="panjiva.html"><span class="big-screen">software for </span>efficent global trade</a></td>
 			</tr>
 			</a>
-			<tr class="blackhat">
+			<tr class="2">
 				<td><a href="#"><h2>Black Hat</h2></a></td>
 				<td><a href="#"><span class="big-screen">2 player asynchronous </span>virtual reality game</a></td>
 			</tr>
-			<tr class="mcent">
+			<tr class="3">
 				<td><a href="#"><h2>mCent</h2></a></td>
 				<td><a href="#"><span class="big-screen">international </span>mobile crowdsourcing</a></td>
 			</tr>
-			<tr class="medlert">
-				<td><a href="#"><h2>Medlert</h2></a></td>
-				<td><a href="#">life-saving medical app<span class="big-screen"> for seniors</span></a></td>
-			</tr>
-			<tr class="squeezicks">
+			<tr class="4">
 				<td><a href="#"><h2>Squeezicks</h2></a></td>
 				<td><a href="#"><span class="big-screen">boston </span>museum<span class="big-screen"> of science</span> installation</a></td>
 			</tr>
-			<tr class="games">
+			<tr class="5">
+				<td><a href="#"><h2>Medlert</h2></a></td>
+				<td><a href="#">life-saving medical app<span class="big-screen"> for seniors</span></a></td>
+			</tr>
+			<tr class="6">
 				<td><a href="#"><h2>Games</h2></a></td>
 				<td><a href="#">fun experiments<span class="big-screen"> in interactivity</span></a></td>
 			</tr>
-			<tr class="sketches">
-				<td><a href="#"><h2>Sketches</h2></a></td>
-				<td><a href="#">quick drawings</a></td>
+			<tr class="7">
+				<td><a href="#"><h2>Motion</h2></a></td>
+				<td><a href="#">Stories and animations</a></td>
 			</tr>
-			<tr class="misc">
-				<td><a href="#"><h2>Misc</h2></a></td>
-				<td><a href="#">random bits</a></td>
+			<tr class="8">
+				<td><a href="#"><h2>3D</h2></a></td>
+				<td><a href="#">Constructions</a></td>
+			</tr>
+			<tr class="9">
+				<td><a href="#"><h2>2D</h2></a></td>
+				<td><a href="#">Drawings and painting</a></td>
 			</tr>
 		</table>
+	</div>
 	</div>
 </section>
 
@@ -87,15 +93,30 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 <script>
-	$('.panjiva').mouseover(function() {
-		$('#projects').backstretch('images/XinXin-Great-Wall01.jpg');
-	});
 
-	$('.panjiva').mouseout(function() {
-		$('.backstretch').remove();
-		$('#projects').css({backgroundColor: "#15bded"});
-	});
-	
+	var projects = [
+		'images/XinXin-BackgroundBlue.jpg',
+		'images/XinXin-Panjiva.jpg',
+		'images/XinXin-BlackHat.jpg',
+		'images/XinXin-mCent.jpg',
+		'images/XinXin-Squeezicks.jpg',
+		'images/XinXin-Medlert.jpg',
+		'images/XinXin-Icarus.jpg',
+		'images/XinXin-RetailProject.jpg',
+		'images/XinXin-RubiksCube03.jpg',
+		'images/XinXin-Sketch06.jpg'
+	];
+
+	$('#projects tr').hover(function() {
+		number = $(this).attr('class')
+		$('#projects .backstretch-canvas').backstretch([projects[number]], {speed: 1000});
+		$('.backstretch').addClass("dim");
+	},
+		function() {
+			$('#projects .backstretch-canvas').backstretch(['images/XinXin-BackgroundBlue.jpg'], {speed: 200});
+		}
+	);
+
 </script>
 </body>
 </html>

@@ -48,13 +48,13 @@ table {
 
 footer {
 	text-align: center;
-	background: rgba($black, .8) url(images/XinXin-Great-Wall01.jpg) no-repeat center center fixed;
+	background: rgba($black, .8) url(images/XinXin-GreatWall.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/XinXin-Great-Wall01.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/XinXin-Great-Wall01.jpg', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/XinXin-GreatWall.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/XinXin-GreatWall.jpg', sizingMethod='scale')";
 	color: white;
 	height: 100%;
 	width: 100%;
@@ -105,7 +105,12 @@ article {
 }
 
 #projects {
-	padding: (40/14) + rem (20/14) + rem;
+
+	padding: 0;
+
+	.backstretch-canvas {
+		padding: (40/14) + rem (20/14) + rem;
+	}
 
 	h2, a {
 		margin-bottom: (10/14) + rem;
@@ -170,8 +175,8 @@ header.case-study {
 	-o-background-size: cover !important;
 	background-size: cover !important;
 	background-attachment: scroll !important;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/XinXin-Great-Wall01.jpg', sizingMethod='scale')  !important;
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/XinXin-Great-Wall01.jpg', sizingMethod='scale')"  !important;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.images/XinXin-GreatWall.jpg', sizingMethod='scale')  !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/XinXin-GreatWall.jpg', sizingMethod='scale')"  !important;
 	color: white;
 	position: relative;
 
@@ -190,3 +195,13 @@ header.case-study {
 		position: relative;
 	}
 }
+
+.dim {
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+
+.backstretch img {
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}    
