@@ -154,11 +154,11 @@ a:hover, a:visited:hover {
 }
 
 /* line 85, _typography.scss */
-article a {
+#blog article a {
   display: block;
 }
 /* line 88, _typography.scss */
-article a:after, article a:visited:after, article a:active:after {
+#blog article a:after, #blog article a:visited:after, #blog article a:active:after {
   border: 0;
 }
 
@@ -230,7 +230,7 @@ button, .button, a:visited.button, a:active.button {
   font-weight: 700;
   color: #ff4a40;
   font-size: 0.85714rem;
-  line-height: 2.85714rem;
+  line-height: 2.71429rem;
   height: 2.85714rem;
   background-color: none;
   padding: 0 0.71429rem;
